@@ -5,23 +5,23 @@ import Fontisto from 'react-native-vector-icons/Fontisto';
 const HomeScreen = props => {
   return (
     <View>
-      {/* Search bar */}
       <ImageBackground
-        source={require('../../../assets/images/wallpaper.jpg')}
+        source={'../../../assets/images/wallpaper.jpg'}
         style={styles.image}>
-        {/* Title */}
+        {/* Search bar */}
         <Pressable
           style={styles.searchButton}
-          onPress={() => console.warn('Search Btn clicked')}>
+          onPress={() => console.log('Search Btn clicked')}>
           <Fontisto name="search" size={25} color={'#f15454'} />
           <Text style={styles.searchButtonText}>Where are you going?</Text>
         </Pressable>
+        {/* Title */}
         <Text style={styles.title}>Go Near</Text>
 
         {/* Button */}
         <Pressable
           style={styles.button}
-          onPress={() => console.warn('Explore Btn clicked')}>
+          onPress={() => console.log('Explore Btn clicked')}>
           <Text style={styles.buttonText}>Explore neaby stays</Text>
         </Pressable>
       </ImageBackground>
